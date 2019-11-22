@@ -41,11 +41,10 @@ body {
     transition: 0.5s all;
 }
 
-.acesso {
-    display: inline-block;
-    padding: 0 auto;
-
+#acesso {
+  margin: 5px auto;
 }
+
 
 .sidebar {
     background-repeat: no-repeat;

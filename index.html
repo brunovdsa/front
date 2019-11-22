@@ -27,49 +27,44 @@
 <body>
     <!-- INÍCIO FORMULÁRIO -->
 
-            <div class="text-center col-6 form-wrapper">
-                <form class="form-signin" id="formulario">
-                    <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
-                    <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
+    <div class="text-center col-6 form-wrapper">
+        <form class="form-signin" id="formulario">
+            <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
+            <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
 
-                    <div class="input-group mb-3">
-                        <label for="Email" class="sr-only">Email</label>
-                        <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
-                    </div>
-
-                    <div class="form-input input-group mb-3">
-                        <label for="Senha" class="sr-only">Senha</label>
-                        <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
-                        <span type="checkbox" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-5">
-                            <label>
-                                <input type="checkbox" value="remember-me"> Lembrar-me
-                            </label>
-                        </div>
-
-                        <div class="col-7" id="recuperar-senha">
-                            <a href="#" data-target="#pwdModal" data-toggle="modal">Esqueci minha senha</a>
-                        </div>
-                    </div>
-                    <button class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
-
-
-                    <div class="row">
-                        <div class="col-7 justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
-                            <p id="acesso" class="text-left">Não possui cadastro?</p>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6 justify-content-md-between justify-content-sm-between flax-wrap w-100 p-0 m-0 text-center">
-                                <a id="cadastro" href="#" data-target="#pwdModal" data-toggle="modal">Cadastre-se</a>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+            <div class="input-group mb-3">
+                <label for="Email" class="sr-only">Email</label>
+                <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
             </div>
+
+            <div class="form-input input-group mb-3">
+                <label for="Senha" class="sr-only">Senha</label>
+                <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
+                <span type="checkbox" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-5">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Lembrar-me
+                    </label>
+                </div>
+
+                <div class="col-7" id="recuperar-senha">
+                    <a href="#" data-target="#pwdModal" data-toggle="modal">Esqueci minha senha</a>
+                </div>
+            </div>
+
+             <button class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
+
+            <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
+                <p id="acesso">Não possui cadastro?</p>
+            </div>
+            <div class="ustify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
+                <a id="cadastro" href="#" data-target="#pwdModal" data-toggle="modal">Cadastre-se</a>
+            </div>
+        </form>
+    </div>
 
     <!-- FIM FORMULÁRIO -->
 

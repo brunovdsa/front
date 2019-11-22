@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Bruno Vinícius Souza de Sá">
+    <meta name="description" content="Tela de login Teste">
+
+    <!-- CSS/BOOTSTRAP -->
+    <link rel="stylesheet" href="css/sytle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/principal.css">
+
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <title>Logdy</title>
+</head>
+
+
+<body>
+    <!-- INÍCIO FORMULÁRIO -->
+
+            <div class="text-center col-6 form-wrapper">
+                <form class="form-signin" id="formulario">
+                    <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
+                    <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
+
+                    <div class="input-group mb-3">
+                        <label for="Email" class="sr-only">Email</label>
+                        <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
+                    </div>
+
+                    <div class="form-input input-group mb-3">
+                        <label for="Senha" class="sr-only">Senha</label>
+                        <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
+                        <span type="checkbox" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-5">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Lembrar-me
+                            </label>
+                        </div>
+
+                        <div class="col-7" id="recuperar-senha">
+                            <a href="#" data-target="#pwdModal" data-toggle="modal">Esqueci minha senha</a>
+                        </div>
+                    </div>
+                    <button class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
+
+
+                    <div class="row">
+                        <div class="col-7 justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
+                            <p id="acesso" class="text-left">Não possui cadastro?</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 justify-content-md-between justify-content-sm-between flax-wrap w-100 p-0 m-0 text-center">
+                                <a id="cadastro" href="#" data-target="#pwdModal" data-toggle="modal">Cadastre-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+    <!-- FIM FORMULÁRIO -->
+
+
+    <!-- INÍCIO SIDEBAR -->
+    <div class="">
+        <div id="sidebar" class="row justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center sidebar col-6 p-0">
+            <img class="img-sidebar" src="img/polygon2.jpg" alt="Background Geométrico">
+
+            <div class="ml-2 mr-2" id="sideContent">
+                <h3 class="title-sidebar text-left ml-4 p-2">We make spetacular</h3>
+                <p class="text-sidebar text-left ml-4 p-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+
+                <div class="text-left ml-4 p-1 col-6 icons-sidebar">
+                    <a href="https://pt-br.facebook.com" class="icons mr-2" alt="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="icons mr-2" alt="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://br.linkedin.com" class="icons mr-2" alt="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5547991404688" class="icons mr-2" alt="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM SIDEBAR -->
+
+    <!-- INÍCIO FOOTER -->
+
+    <footer>
+        <p class="text-muted justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-footer">© Bruno de Sá - 2019</p>
+    </footer>
+
+
+    <!-- FIM FOOTER -->
+
+</body>
+
+</html>

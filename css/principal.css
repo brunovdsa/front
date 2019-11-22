@@ -1,0 +1,120 @@
+html,
+body {
+    background: #ffffff;
+    height: 100%;
+}
+
+
+.form-wrapper {
+    height: 93%;
+    text-align: center;
+}
+
+#formulario {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    margin: 0 auto;
+}
+
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background-color: #2500CC;
+    border-color: #2500CC;
+
+}
+
+.btn-primary:hover {
+    background-color: #201780;
+    border-color: #201780;
+    transition: 0.5s all;
+}
+
+.acesso {
+    display: inline-block;
+    padding: 0 auto;
+
+}
+
+.sidebar {
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: table-row;
+    width: 100%;
+
+
+}
+
+
+.img-sidebar {
+    background-repeat: no-repeat;
+    border-radius: 50% 0% 0% 50%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: table-row;
+}
+
+
+.sidebar-container {
+    display: table;
+}
+
+.title-sidebar {
+    color: #FFFFFF;
+     !important;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.text-sidebar {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.icons-sidebar {
+    font-size: 25px;
+     !important;
+    width: 100%;
+
+}
+
+.icons-sidebar a:hover {
+    color: #201780;
+}
+
+.icons {
+    color: #FFFFFF;
+}
+
+.btn-sidebar {
+    width: 50%;
+    display: inline-block;
+}
+
+div.row.justify-content-center {
+    margin: 0;
+}
+
+.text-footer {
+    text-align: center;
+}
+
+

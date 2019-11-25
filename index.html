@@ -32,18 +32,18 @@
         <form class="form-signin" id="formulario">
             <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
             <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
+            <div id="formulario">
+                <div class="input-group mb-3">
+                    <label for="Email" class="sr-only">Email</label>
+                    <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
+                </div>
 
-            <div class="input-group mb-3">
-                <label for="Email" class="sr-only">Email</label>
-                <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
+                <div class="form-input input-group mb-3">
+                    <label for="Senha" class="sr-only">Senha</label>
+                    <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
+                    <span type="checkbox" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                </div>
             </div>
-
-            <div class="form-input input-group mb-3">
-                <label for="Senha" class="sr-only">Senha</label>
-                <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
-                <span type="checkbox" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-            </div>
-
             <div class="row">
                 <div class="col-5">
                     <label>
@@ -56,7 +56,7 @@
                 </div>
             </div>
 
-             <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
+            <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
 
             <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
                 <p id="acesso">Não possui cadastro?</p>

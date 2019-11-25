@@ -14,6 +14,7 @@
 
     <!-- JQUERY -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="js/script.js"></script>
 
 
@@ -55,7 +56,7 @@
                 </div>
             </div>
 
-             <button class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
+             <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
 
             <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
                 <p id="acesso">Não possui cadastro?</p>
@@ -63,6 +64,7 @@
             <div class="ustify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
                 <a id="cadastro" href="#" data-target="#pwdModal" data-toggle="modal">Cadastre-se</a>
             </div>
+            <div id="message"></div>
         </form>
     </div>
 
@@ -72,7 +74,7 @@
     <!-- INÍCIO SIDEBAR -->
     <div class="">
         <div id="sidebar" class="row justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center sidebar col-6 p-0">
-            <img class="img-sidebar" src="img/polygon2.jpg" alt="Background Geométrico">
+            <img class="img-responsive  img-sidebar" src="img/polygon2.jpg" alt="Background Geométrico">
 
             <div class="ml-2 mr-2" id="sideContent">
                 <h3 class="title-sidebar text-left ml-4 p-2">We make spetacular</h3>

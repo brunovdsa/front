@@ -4,7 +4,6 @@ body {
     height: 100%;
 }
 
-
 .form-wrapper {
     height: 93%;
     text-align: center;
@@ -13,7 +12,7 @@ body {
 #formulario {
     width: 100%;
     max-width: 400px;
-    padding: 15px;
+    padding: 0px;
     margin: auto;
     margin: 0 auto;
 }
@@ -30,19 +29,19 @@ body {
 
 
 .btn-primary {
-    background-color: #2500CC;
-    border-color: #2500CC;
+    background-color: #008898;
+    border-color: #008898;
 
 }
 
 .btn-primary:hover {
-    background-color: #201780;
-    border-color: #201780;
+    background-color: #007380;
+    border-color: #007380;
     transition: 0.5s all;
 }
 
 #acesso {
-  margin: 5px auto;
+    margin: 5px auto;
 }
 
 
@@ -96,7 +95,7 @@ body {
 }
 
 .icons-sidebar a:hover {
-    color: #201780;
+    color: rgba(0,0,0,.4);
 }
 
 .icons {
@@ -108,6 +107,25 @@ body {
     display: inline-block;
 }
 
+.close {
+    color: #ffffff;
+}
+
+.close:hover {
+    color: #ffffff;
+}
+
+.style-modal {
+    background: #008898;
+}
+
+.label-modal {
+    text-align: left;
+    display: flex;
+    font-weight: bold;
+}
+
+
 div.row.justify-content-center {
     margin: 0;
 }
@@ -116,4 +134,13 @@ div.row.justify-content-center {
     text-align: center;
 }
 
+.modal-open .modal {
+    background-color: rgba(0, 0, 0, .8) !important;
+}
 
+.title-modal {
+    color: #FFFFFF;
+    text-align: center;
+    display: relative;
+    font-weight: bold;
+}

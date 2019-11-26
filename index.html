@@ -12,10 +12,17 @@
     <link rel="stylesheet" href="css/principal.css">
 
 
-    <!-- JQUERY -->
+    <!-- JQUERY/AJAX  -->
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+    <!-- JS PRINCIPAL-->
     <script src="js/script.js"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
 
     <!-- FONT AWESOME -->
@@ -55,19 +62,70 @@
                     <a href="#" data-target="#pwdModal" data-toggle="modal">Esqueci minha senha</a>
                 </div>
             </div>
-
-            <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
+            <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block btn-style" type="submit">Login</button>
 
             <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
                 <p id="acesso">Não possui cadastro?</p>
             </div>
-            <div class="ustify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
-                <a id="cadastro" href="#" data-target="#pwdModal" data-toggle="modal">Cadastre-se</a>
+
+            <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
+
+                <a id="cadastro" href="#" data-toggle="modal" data-target="#modal-cadastro">
+                    Cadastre-se
+                </a>
+
+
+                <!-- INÍCIO MODAL -->
+
+                <div class="modal fade" id="modal-cadastro">
+
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header style-modal">
+                                <h3 class="title-modal">Cadastre-se</h3>
+
+                                <button type="button" class="close trigger" aria-label="Close" data-dismiss="modal">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+
+                            <!-- INÍCIO FORMULÁRIO MODAL -->
+                            <div class="p-3">
+                            <form>
+                                <div class="form-group">
+                                    <label for="NomeModal" class="label-modal">Nome</label>
+                                    <input type="email" class="form-control rounded-pill" id="NomeModal" aria-describedby="emailHelp" placeholder="Nome completo">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="EmailModal" class="label-modal">E-mail</label>
+                                    <input type="email" class="form-control rounded-pill" id="EmailModal" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="SenhaModal" class="label-modal">Senha</label>
+                                    <input type="email" class="form-control rounded-pill" id="SenhaModal" aria-describedby="emailHelp" placeholder="Nome completo">
+
+                                    <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seus dados com ninguém.</small>
+                                </div>
+
+
+                            </form>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary rounded-pill">Criar conta</button>
+
+                                <button type="button" class="btn btn-defaut" data-dismiss="modal">Sair</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="message"></div>
         </form>
     </div>
-
     <!-- FIM FORMULÁRIO -->
 
 
@@ -93,12 +151,9 @@
     <!-- FIM SIDEBAR -->
 
     <!-- INÍCIO FOOTER -->
-
     <footer>
         <p class="text-muted justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-footer">© Bruno de Sá - 2019</p>
     </footer>
-
-
     <!-- FIM FOOTER -->
 
 </body>

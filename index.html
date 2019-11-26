@@ -39,18 +39,17 @@
         <form class="form-signin" id="formulario">
             <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
             <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
-            <div id="formulario">
-                <div class="input-group mb-3">
-                    <label for="Email" class="sr-only">Email</label>
-                    <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
-                </div>
 
-                <div class="form-input input-group mb-3">
-                    <label for="Senha" class="sr-only">Senha</label>
-                    <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
-                    <span type="checkbox" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                </div>
+            <div class="input-group mb-3">
+                <label for="Email" class="sr-only">Email</label>
+                <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
             </div>
+            <div class="form-input input-group mb-3">
+                <label for="Senha" class="sr-only">Senha</label>
+                <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
+            </div>
+
+
             <div class="row">
                 <div class="col-5">
                     <label>
@@ -62,62 +61,49 @@
                     <a href="#" data-target="#pwdModal" data-toggle="modal">Esqueci minha senha</a>
                 </div>
             </div>
+
             <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block btn-style" type="submit">Login</button>
-
             <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
-                <p id="acesso">Não possui cadastro?</p>
+                <p id="sign-in">Não possui cadastro?</p>
             </div>
-
             <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
-
-                <a id="cadastro" href="#" data-toggle="modal" data-target="#modal-cadastro">
-                    Cadastre-se
-                </a>
+                <a id="cadastro" href="#" data-toggle="modal" data-target="#modal-cadastro">Cadastre-se</a>
 
 
                 <!-- INÍCIO MODAL -->
 
                 <div class="modal fade" id="modal-cadastro">
-
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
-
                             <div class="modal-header style-modal">
                                 <h3 class="title-modal">Cadastre-se</h3>
-
                                 <button type="button" class="close trigger" aria-label="Close" data-dismiss="modal">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
 
-
                             <!-- INÍCIO FORMULÁRIO MODAL -->
                             <div class="p-3">
-                            <form>
-                                <div class="form-group">
-                                    <label for="NomeModal" class="label-modal">Nome</label>
-                                    <input type="email" class="form-control rounded-pill" id="NomeModal" aria-describedby="emailHelp" placeholder="Nome completo">
-                                </div>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="NomeModal" class="label-modal">Nome</label>
+                                        <input type="email" class="form-control rounded-pill" id="NomeModal" aria-describedby="emailHelp" placeholder="Nome completo">
+                                    </div>
 
-                                <div class="form-group">
-                                    <label for="EmailModal" class="label-modal">E-mail</label>
-                                    <input type="email" class="form-control rounded-pill" id="EmailModal" aria-describedby="emailHelp" placeholder="Enter email">
-                                </div>
+                                    <div class="form-group">
+                                        <label for="EmailModal" class="label-modal">E-mail</label>
+                                        <input type="email" class="form-control rounded-pill" id="EmailModal" aria-describedby="emailHelp" placeholder="Enter email">
+                                    </div>
 
-                                <div class="form-group">
-                                    <label for="SenhaModal" class="label-modal">Senha</label>
-                                    <input type="email" class="form-control rounded-pill" id="SenhaModal" aria-describedby="emailHelp" placeholder="Nome completo">
-
-                                    <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seus dados com ninguém.</small>
-                                </div>
-
-
-                            </form>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary rounded-pill">Criar conta</button>
-
-                                <button type="button" class="btn btn-defaut" data-dismiss="modal">Sair</button>
+                                    <div class="form-group">
+                                        <label for="SenhaModal" class="label-modal">Senha</label>
+                                        <input type="email" class="form-control rounded-pill" id="SenhaModal" aria-describedby="emailHelp" placeholder="Nome completo">
+                                        <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seus dados com ninguém.</small>
+                                    </div>
+                                </form>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary rounded-pill">Criar conta</button>
+                                    <button type="button" class="btn btn-defaut" data-dismiss="modal">Sair</button>
                                 </div>
                             </div>
                         </div>
@@ -151,9 +137,11 @@
     <!-- FIM SIDEBAR -->
 
     <!-- INÍCIO FOOTER -->
-    <footer>
-        <p class="text-muted justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-footer">© Bruno de Sá - 2019</p>
-    </footer>
+ <footer class="footer mt-auto py-3 justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
+  <div class="container">
+    <span class="text-muted">&copy; Bruno de Sá - 2019</span>
+  </div>
+</footer>
     <!-- FIM FOOTER -->
 
 </body>

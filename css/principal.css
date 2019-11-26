@@ -4,27 +4,12 @@ body {
     height: 100%;
 }
 
-.form-wrapper {
-    height: 93%;
-    text-align: center;
-}
-
 #formulario {
     width: 100%;
     max-width: 400px;
     padding: 0px;
     margin: auto;
     margin: 0 auto;
-}
-
-
-.field-icon {
-    float: right;
-    margin-left: -25px;
-    margin-top: 10px;
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
 }
 
 
@@ -40,8 +25,37 @@ body {
     transition: 0.5s all;
 }
 
-#acesso {
+#sign-in {
     margin: 5px auto;
+}
+
+.style-modal {
+    background: #008898;
+}
+
+.title-modal {
+    color: #FFFFFF;
+    text-align: center;
+    display: relative;
+    font-weight: bold;
+}
+
+.close {
+    color: #ffffff;
+}
+
+.close:hover {
+    color: #ffffff;
+}
+
+.label-modal {
+    text-align: left;
+    display: flex;
+    font-weight: bold;
+}
+
+.modal-open .modal {
+    background-color: rgba(0, 0, 0, .8) !important;
 }
 
 
@@ -55,10 +69,7 @@ body {
     right: 0;
     display: table-row;
     width: 100%;
-
-
 }
-
 
 .img-sidebar {
     background-repeat: no-repeat;
@@ -95,36 +106,12 @@ body {
 }
 
 .icons-sidebar a:hover {
-    color: rgba(0,0,0,.4);
+    color: rgba(0, 0, 0, .4);
 }
 
 .icons {
     color: #FFFFFF;
 }
-
-.btn-sidebar {
-    width: 50%;
-    display: inline-block;
-}
-
-.close {
-    color: #ffffff;
-}
-
-.close:hover {
-    color: #ffffff;
-}
-
-.style-modal {
-    background: #008898;
-}
-
-.label-modal {
-    text-align: left;
-    display: flex;
-    font-weight: bold;
-}
-
 
 div.row.justify-content-center {
     margin: 0;
@@ -134,13 +121,9 @@ div.row.justify-content-center {
     text-align: center;
 }
 
-.modal-open .modal {
-    background-color: rgba(0, 0, 0, .8) !important;
-}
-
-.title-modal {
-    color: #FFFFFF;
-    text-align: center;
-    display: relative;
-    font-weight: bold;
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }

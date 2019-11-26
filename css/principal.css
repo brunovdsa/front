@@ -13,6 +13,14 @@ body {
 }
 
 
+.btn-modal {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+
 .btn-primary {
     background-color: #008898;
     border-color: #008898;
@@ -29,12 +37,16 @@ body {
     margin: 5px auto;
 }
 
-.style-modal {
-    background: #008898;
+.modal-content {
+    background: transparent;
+}
+
+.modal-header  {
+    background: transparent;
 }
 
 .title-modal {
-    color: #FFFFFF;
+    color: #008898;
     text-align: center;
     display: relative;
     font-weight: bold;
@@ -52,10 +64,28 @@ body {
     text-align: left;
     display: flex;
     font-weight: bold;
+    color: #FFFFFF;
 }
 
+.input-modal {
+    background: transparent;
+    border: 2px solid #008898;
+
+}
+
+
 .modal-open .modal {
-    background-color: rgba(0, 0, 0, .8) !important;
+    background-color: rgba(0, 0, 0, .9) !important;
+}
+
+.small-text {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.modal-footer {
+    display: inline-block;
+    width: 100%; !important;
 }
 
 
@@ -127,3 +157,4 @@ div.row.justify-content-center {
     left: 0;
     right: 0;
 }
+

@@ -25,6 +25,14 @@ body {
     margin-right: 30px;
 }
 
+.form-control {
+    margin: 5px;
+}
+
+.lembrar-check {
+    margin-top: 10px;
+}
+
 .recuperar-senha {
     color: #008898;
      !inportant;
@@ -60,7 +68,9 @@ body {
     transition: 0.5s all;
 }
 
+
 /* INICIO CSS MODAL */
+
 
 .modal-content {
     background: transparent;
@@ -97,6 +107,7 @@ body {
     background: transparent;
     border: 2px solid #008898;
 
+
 }
 
 .small-text {
@@ -105,6 +116,8 @@ body {
 
 .btn-modal {
     width: 100%;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .btn-modal-login {
@@ -130,11 +143,13 @@ body {
     text-align: center;
     width: 100%;
      !important;
+    padding: 0;
 }
 
 .modal-footer {
     border: none;
 }
+
 
 /*INÍCIO CSS SIDEBAR */
 
@@ -192,7 +207,7 @@ body {
 
 
 
-/* Mobile first - up to 768px wide*/
+/* MOBILE */
 @media screen and (max-width:767px) {
 
     body {
@@ -216,7 +231,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         margin-right: -15px;
-        margin-left: -15px;
+        margin-left: -75px;
 
 
     }
@@ -242,7 +257,7 @@ body {
     }
 }
 
-/*Tablet targetted size*/
+/* TABLET */
 @media screen and (min-width:768px) and (max-width:1024px) {
 
 
@@ -272,7 +287,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         margin-right: -15px;
-        margin-left: -20px;
+        margin-left: -95px;
     }
 
     .icons-color {

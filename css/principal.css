@@ -1,25 +1,52 @@
-html,
+html {
+    height: 100%
+}
+
 body {
-    background: #ffffff;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
     height: 100%;
 }
 
+.container-form {
+    display: flex;
+    max-width: 100%;
+}
+
 #formulario {
-    width: 100%;
+    width: 940px;
     max-width: 400px;
     padding: 0px;
-    margin: auto;
-    margin: 0 auto;
+    margin-right: 30px;
 }
 
+.recuperar-senha {
+    color: #008898;
+     !inportant;
+    text-decoration: none;
+}
 
-.btn-modal {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
+.recuperar-senha:hover {
+    color: #007380;
+     !inportant;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+.possui-cadastro {
+    margin: 5px auto;
+}
+
+#cadastrar {
+    color: #008898;
     font-weight: bold;
+    text-decoration: none;
 }
-
 
 .btn-primary {
     background-color: #008898;
@@ -28,21 +55,20 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #007380;
-    border-color: #007380;
+    background-color: #04616c;
+    border-color: #04616c;
     transition: 0.5s all;
 }
 
-#sign-in {
-    margin: 5px auto;
-}
+/* INICIO CSS MODAL */
 
 .modal-content {
     background: transparent;
 }
 
-.modal-header  {
+.modal-header {
     background: transparent;
+    border: none;
 }
 
 .title-modal {
@@ -73,6 +99,22 @@ body {
 
 }
 
+.small-text {
+    text-align: center;
+}
+
+.btn-modal {
+    width: 100%;
+}
+
+.btn-modal-login {
+    background: transparent;
+    width: 50%;
+}
+
+.btn-modal-login:hover {
+    background: #008898;
+}
 
 .modal-open .modal {
     background-color: rgba(0, 0, 0, .9) !important;
@@ -85,35 +127,34 @@ body {
 
 .modal-footer {
     display: inline-block;
-    width: 100%; !important;
+    text-align: center;
+    width: 100%;
+     !important;
 }
 
+.modal-footer {
+    border: none;
+}
 
-.sidebar {
-    background-repeat: no-repeat;
-    background-size: auto;
-    border-radius: 70%;
-    height: 100%;
+/*INÍCIO CSS SIDEBAR */
+
+
+.img-sidebar {
     position: absolute;
     top: 0;
     right: 0;
-    display: table-row;
-    width: 100%;
-}
-
-.img-sidebar {
+    display: block;
     background-repeat: no-repeat;
-    border-radius: 50% 0% 0% 50%;
     height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    display: table-row;
+    width: 45em;
+    border-radius: 50% 0 0% 50%;
 }
 
-
-.sidebar-container {
-    display: table;
+.side-content {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: fixed;
+    width: 100%
 }
 
 .title-sidebar {
@@ -121,18 +162,24 @@ body {
      !important;
     font-weight: bold;
     font-size: 32px;
+    display: flex;
+    top: 0;
+    width: 100%
 }
 
 .text-sidebar {
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 22px;
+    width: 500px;
 }
 
 .icons-sidebar {
     font-size: 25px;
      !important;
     width: 100%;
-
+    z-index: 15;
+    position: relative;
+    display: flex;
 }
 
 .icons-sidebar a:hover {
@@ -140,21 +187,122 @@ body {
 }
 
 .icons {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
-div.row.justify-content-center {
-    margin: 0;
+
+
+/* Mobile first - up to 768px wide*/
+@media screen and (max-width:767px) {
+
+    body {
+        z-index: 1;
+    }
+
+    .title-sidebar,
+    .text-sidebar,
+    .img-sidebar {
+        display: none;
+    }
+
+    .icons-sidebar {
+        position: fixed;
+        width: 100%;
+        height: 43%;
+        font-size: 1.7em;
+        align-items: flex-end;
+         !important;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+
+
+    }
+
+    .icons-color {
+        color: #008898;
+         !important;
+    }
+
+    .container-form,
+    #modal-cadastro {
+        position: fixed;
+        align-items: center;
+        text-align: center;
+        z-index: 20;
+        width: 100%;
+        margin-right: 10px;
+        padding-left: 5px;
+    }
+
+    .modal-backdrop {
+        display: none;
+    }
 }
 
-.text-footer {
-    text-align: center;
-}
+/*Tablet targetted size*/
+@media screen and (min-width:768px) and (max-width:1024px) {
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
+    body{
+        z-index: 1;
+    }
+
+    #formulario {
+        margin: 0;
+    }
+
+    .title-sidebar,
+    .text-sidebar,
+    .img-sidebar {
+        display: none;
+    }
+
+    .icons-sidebar {
+        position: fixed;
+        width: 100%;
+        height: 43%;
+        font-size: 1.7em;
+        align-items: flex-end;
+         !important;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -20px;
+    }
+
+    .icons-color {
+        color: #008898;
+         !important;
+    }
+
+    .container-form {
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-left: 5px;
+        z-index: 20;
+    }
+
+    #modal-cadastro {
+        z-index: 30;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-right: 10px;
+        padding-left: 5px;
+    }
+
+        .modal-backdrop {
+        display: none;
+    }
+
+}

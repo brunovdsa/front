@@ -5,25 +5,22 @@
     <meta charset="UTF-8">
     <meta name="author" content="Bruno Vinícius Souza de Sá">
     <meta name="description" content="Tela de login Teste">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS/BOOTSTRAP -->
-    <link rel="stylesheet" href="css/sytle.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/principal.css">
-
-
     <!-- JQUERY/AJAX  -->
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 
-    <!-- JS PRINCIPAL-->
-    <script src="js/script.js"></script>
-
     <!-- JS BOOTSTRAP -->
     <script src="js/bootstrap.bundle.min.js"></script>
 
+    <!-- JS PRINCIPAL-->
+    <script src="js/script.js"></script>
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
@@ -31,119 +28,109 @@
     <title>Logdy</title>
 </head>
 
-
 <body>
-    <!-- INÍCIO FORMULÁRIO -->
+    <!-- INÍCIO FORM -->
+    <div class="container container-form ">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6">
+                <form id="formulario" class="form-signin text-md-center">
+                    <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
+                    <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Email" required="" autofocus="">
 
-    <div class="text-center col-6 form-wrapper">
-        <form class="form-signin" id="formulario">
-            <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
-            <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
+                    <label for="senha" class="sr-only">Password</label>
+                    <input type="password" id="senha" class="form-control" placeholder="Senha" required="">
 
-            <div class="input-group mb-3">
-                <label for="Email" class="sr-only">Email</label>
-                <input type="email" id="Email" class="form-control" placeholder="Email" required="" autofocus="">
-            </div>
-            <div class="form-input input-group mb-3">
-                <label for="Senha" class="sr-only">Senha</label>
-                <input id="password-field" type="password" class="form-control" name="password" value="" placeholder="Senha">
-            </div>
-
-
-            <div class="row">
-                <div class="col-5">
-                    <label>
-                        <input type="checkbox" value="remember-me"> Lembrar-me
-                    </label>
-                </div>
-
-                <div class="col-7" id="recuperar-senha">
-                    <a href="#" data-target="#pwdModal" data-toggle="modal">Esqueci minha senha</a>
-                </div>
-            </div>
-
-            <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block btn-style" type="submit">Login</button>
-            <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center" id="recuperar-senha">
-                <p id="sign-in">Não possui cadastro?</p>
-            </div>
-            <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
-                <a id="cadastro" href="#" data-toggle="modal" data-target="#modal-cadastro">Cadastre-se</a>
-
-
-                <!-- INÍCIO MODAL -->
-
-                <div class="modal fade style-modal" id="modal-cadastro">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3 class="title-modal">Cadastre-se</h3>
-                                        <button type="button" class="close trigger" aria-label="Close" data-dismiss="modal">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-
-                                    <!-- INÍCIO FORMULÁRIO MODAL -->
-                                    <div class="p-3">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for="NomeModal" class="label-modal">Nome</label>
-                                                <input type="email" class="form-control rounded-pill input-modal" id="NomeModal" aria-describedby="emailHelp" placeholder="Nome completo">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="EmailModal" class="label-modal">E-mail</label>
-                                                <input type="email" class="form-control rounded-pill input-modal" id="EmailModal" aria-describedby="emailHelp" placeholder="Enter email">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label for="SenhaModal" class="label-modal">Senha</label>
-                                                <input type="email" class="form-control rounded-pill input-modal" id="SenhaModal" aria-describedby="emailHelp" placeholder="Nome completo">
-                                                <small id="emailHelp" class="form-text text-muted small-text">Nós nunca compartilharemos seus dados com ninguém.</small>
-                                            </div>
-                                        </form>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary btn-modal rounded-pill ">Criar conta</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col-5">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Lembrar-me
+                            </label>
                         </div>
+
+                        <div class="col-7">
+                            <a class="recuperar-senha" href="#" data-target="#pwdModal" data-toggle="modal">Esqueci minha senha</a>
+                        </div>
+                    </div>
+
+                    <button id="login-btn" class="rounded-pill btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                    <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
+                        <p class="possui-cadastro">Não possui cadastro?</p>
+                    </div>
+                    <div class="justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
+                        <a id="cadastrar" href="#" data-toggle="modal" data-target="#modal-cadastro">Cadastre-se</a>
                     </div>
 
                 </form>
             </div>
+        </div>
+    </div>
 
-    <!-- FIM FORMULÁRIO -->
 
+    <!-- INÍCIO MODAL -->
+    <div class="modal fade style-modal" id="modal-cadastro">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="title-modal">Cadastre-se</h3>
+                    <button type="button" class="close trigger" aria-label="Close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
 
-    <!-- INÍCIO SIDEBAR -->
-    <div class="">
-        <div id="sidebar" class="row justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center sidebar col-6 p-0">
-            <img class="img-responsive  img-sidebar" src="img/polygon2.jpg" alt="Background Geométrico">
+                <!-- INÍCIO FORMULÁRIO MODAL -->
+                <div class="p-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="NomeModal" class="label-modal">Nome</label>
+                            <input type="email" class="form-control rounded-pill input-modal" id="NomeModal" aria-describedby="emailHelp" placeholder="Nome completo">
+                        </div>
 
-            <div class="ml-2 mr-2" id="sideContent">
-                <h3 class="title-sidebar text-left ml-4 p-2">We make spetacular</h3>
-                <p class="text-sidebar text-left ml-4 p-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                        <div class="form-group">
+                            <label for="EmailModal" class="label-modal">E-mail</label>
+                            <input type="email" class="form-control rounded-pill input-modal" id="EmailModal" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
 
-                <div class="text-left ml-4 p-1 col-6 icons-sidebar">
-                    <a href="https://pt-br.facebook.com" class="icons mr-2" alt="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com" class="icons mr-2" alt="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://br.linkedin.com" class="icons mr-2" alt="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5547991404688" class="icons mr-2" alt="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <div class="form-group">
+                            <label for="SenhaModal" class="label-modal">Senha</label>
+                            <input type="email" class="form-control rounded-pill input-modal" id="SenhaModal" aria-describedby="emailHelp" placeholder="Nome completo">
+                            <small id="emailHelp" class="form-text text-muted small-text">Nós nunca compartilharemos seus dados com ninguém.</small>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-modal rounded-pill ">Criar conta</button>
+                        <button type="button" class="btn btn-primary btn-modal-login rounded-pill mt-2">Faça Login</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- FIM SIDEBAR -->
 
-    <!-- INÍCIO FOOTER -->
- <footer class="footer mt-auto py-3 justify-content-center justify-content-md-between justify-content-sm-between flax-wrap text-center">
-  <div class="container">
-    <span class="text-muted">&copy; Bruno de Sá - 2019</span>
-  </div>
-</footer>
-    <!-- FIM FOOTER -->
+
+    <!-- INÍCIO SIDEBAR -->
+
+    <div class="container-fluid side-content">
+        <div class="row d-flex justify-content-center">
+            <img src="img/polygon2.jpg" class="img-sidebar" alt="Imagem Polygon">
+            <div class="col-11">
+                <h3 class="title-sidebar">We make spetacular</h3>
+                <p class="text-sidebar mt-3">
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                </p>
+
+                <!-- INÍCIO INCONS SIDEBAR -->
+                <div class="row d-flex"></div>
+                <div class="col-12 justify-content-center justify-content-lg-start justify-content-sm-center p-1 icons-sidebar">
+                    <a href="https://pt-br.facebook.com" class="icons mr-2" alt="Facebook"><i class="icons-color fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="icons mr-2" alt="Twitter"><i class="icons-color fab fa-twitter"></i></a>
+                    <a href="https://br.linkedin.com" class="icons mr-2" alt="LinkedIn"><i class="icons-color fab fa-linkedin-in"></i></a>
+                    <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5547991404688" class="icons mr-2" alt="WhatsApp"><i class="icons-color fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

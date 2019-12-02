@@ -185,7 +185,7 @@ body {
 .text-sidebar {
     color: #FFFFFF;
     font-size: 22px;
-    width: 500px;
+    width: 100%;
 }
 
 .icons-sidebar {
@@ -197,7 +197,7 @@ body {
     display: flex;
 }
 
-.icons-sidebar a:hover {
+.icons:hover {
     color: rgba(0, 0, 0, .4);
 }
 
@@ -206,6 +206,8 @@ body {
 }
 
 
+
+/* CONFIGURAÇÕES RESPONSIVO */
 
 /* MOBILE */
 @media screen and (max-width:767px) {
@@ -261,7 +263,7 @@ body {
 @media screen and (min-width:768px) and (max-width:1024px) {
 
 
-    body{
+    body {
         z-index: 1;
     }
 
@@ -316,7 +318,176 @@ body {
         padding-left: 5px;
     }
 
-        .modal-backdrop {
+    .modal-backdrop {
+        display: none;
+    }
+
+}
+
+/* 1368 */
+@media screen and (min-width:1025px) and (max-width:1520px) {
+
+
+    body {
+        z-index: 1;
+    }
+
+    #formulario {
+        margin-right: 17em;
+
+    }
+
+    .icons-sidebar {
+        width: 100%;
+        font-size: 1.7em;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-form {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-left: 5px;
+        z-index: 20;
+    }
+
+    #modal-cadastro {
+        z-index: 30;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-right: 10px;
+        padding-left: 5px;
+    }
+
+    .modal-backdrop {
+        display: none;
+    }
+
+}
+
+/* 1920+ */
+@media screen and (min-width:1521px) and (max-width:1920px) {
+
+
+    body {
+        z-index: 1;
+    }
+
+    #formulario {
+        margin-right: 17em;
+
+    }
+
+    .img-sidebar {
+        width: 50%;
+    }
+
+    .title-sidebar {
+        font-size: 3em;
+    }
+
+    .text-sidebar {
+        font-size: 2em;
+    }
+
+    .icons-sidebar {
+        width: 100%;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .container-form {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-left: 5px;
+        z-index: 20;
+    }
+
+    #modal-cadastro {
+        z-index: 30;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-right: 10px;
+        padding-left: 5px;
+    }
+
+    .modal-backdrop {
+        display: none;
+    }
+
+}
+
+/* 4k */
+@media screen and (min-width:1921px) and (max-width:4096px) {
+
+
+    body {
+        z-index: 1;
+    }
+
+    #formulario {
+        margin-right: 17em;
+
+    }
+
+    .img-sidebar {
+        width: 50%;
+    }
+
+    .title-sidebar {
+        font-size: 5em;
+    }
+
+    .text-sidebar {
+        font-size: 4em;
+    }
+
+    .icons-sidebar {
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .icons {
+        margin: 15px;
+    }
+
+    .container-form {
+        text-align: center;
+        width: 100%;
+        padding-left: 5px;
+        z-index: 20;
+    }
+
+    #modal-cadastro {
+        z-index: 30;
+        position: fixed;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin-right: 10px;
+        padding-left: 5px;
+    }
+
+    .modal-backdrop {
         display: none;
     }
 

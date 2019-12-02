@@ -10,9 +10,13 @@
     <!-- CSS/BOOTSTRAP -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/principal.css">
+
     <!-- JQUERY/AJAX  -->
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/localization/messages_pt_BR.min.js"></script>
+    <script src="js/additional-methods.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 
@@ -35,7 +39,7 @@
             <div class="col-lg-6">
                 <form id="formulario" class="form-signin text-md-center">
                     <h1 class="titulo-principal"><Strong>lodgy</Strong></h1>
-                    <h2 class="h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
+                    <h2 class="desc-form h3 mb-3 font-weight-normal">Faça login em sua conta</h2>
                     <label for="email" class="sr-only">Email address</label>
                     <input type="email" id="email" class="form-control" placeholder="Email" required="" autofocus="">
 
@@ -81,26 +85,26 @@
 
                 <!-- INÍCIO FORMULÁRIO MODAL -->
                 <div class="p-3">
-                    <form>
+                    <form id="form-cadastro" method="POST" action="processa.php">
                         <div class="form-group">
                             <label for="NomeModal" class="label-modal">Nome</label>
-                            <input type="email" class="form-control rounded-pill input-modal" id="NomeModal" aria-describedby="emailHelp" placeholder="Nome completo">
+                            <input type="text" name="nome" class="form-control rounded-pill input-modal" id="NomeModal" aria-describedby="emailHelp" placeholder="Nome completo">
                         </div>
 
                         <div class="form-group">
                             <label for="EmailModal" class="label-modal">E-mail</label>
-                            <input type="email" class="form-control rounded-pill input-modal" id="EmailModal" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" name="email" class="form-control rounded-pill input-modal" id="EmailModal" aria-describedby="emailHelp" placeholder="Enter email">
                         </div>
 
                         <div class="form-group">
                             <label for="SenhaModal" class="label-modal">Senha</label>
-                            <input type="email" class="form-control rounded-pill input-modal" id="SenhaModal" aria-describedby="emailHelp" placeholder="Nome completo">
+                            <input type="password" name="senha" class="form-control rounded-pill input-modal" id="SenhaModal" aria-describedby="emailHelp" placeholder="Nome completo">
                             <small id="emailHelp" class="form-text text-muted small-text">Nós nunca compartilharemos seus dados com ninguém.</small>
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-primary btn-modal rounded-pill ">Criar conta</button>
-                            <button type="button" class="btn btn-primary btn-modal-login rounded-pill mt-2">Faça Login</button>
+                            <input type="submit" class="btn btn-primary btn-modal rounded-pill" value="Criar conta">
+                            <input type="submit" class="btn btn-primary btn-modal-login rounded-pill mt-2" value="Entrar">
                         </div>
                     </form>
                 </div>

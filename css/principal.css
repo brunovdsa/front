@@ -439,11 +439,81 @@ body {
         z-index: 1;
     }
 
+    .titulo-principal {
+        font-size: 6em;
+    }
+
+    .desc-form {
+        font-size: 4em;
+    }
+
+    .container-form {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+        margin-right: 50em;
+        z-index: 20;
+    }
+
     #formulario {
         margin-right: 17em;
+        max-width: none;
 
     }
 
+    #email,
+    #senha {
+        font-size: 50px;
+        padding: 50px;
+    }
+
+    .form-control {
+        margin: 15px;
+    }
+
+    .lembrar-check {
+        font-size: 2.7em;
+    }
+
+    #login-btn{
+        padding: 10px;
+        font-size: 3em;
+    }
+
+    .possui-cadastro, #cadastrar {
+        font-size: 3em;
+    }
+
+    /* MODAL */
+
+    .modal-responsive {
+        width: 980px;
+        margin-left: -300px;
+    }
+
+    .title-modal  {
+        font-size: 3em;
+    }
+
+    #form-cadastro {
+        font-size: 2.3em;
+    }
+
+    .input-modal {
+        padding: 33px;
+        font-size: 1.1em;
+    }
+
+    #emailHelp {
+        font-size: 0.92em;
+    }
+
+    .btn-modal, .btn-modal-login {
+        padding: 20px;
+        font-size: 33px;
+    }
+
+    /* SIDEBAR */
     .img-sidebar {
         width: 50%;
     }
@@ -467,13 +537,6 @@ body {
 
     .icons {
         margin: 15px;
-    }
-
-    .container-form {
-        text-align: center;
-        width: 100%;
-        padding-left: 5px;
-        z-index: 20;
     }
 
     #modal-cadastro {

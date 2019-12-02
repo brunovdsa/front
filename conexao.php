@@ -1,6 +1,6 @@
 <?php
 
-$conectar = mysql_connect("localhost",usuario,senha);
-$mysql_select_db("tcc");
+$conectar = mysql_connect("localhost","root","");
+$mysql_select_db("lodgy");
 
 ?>
